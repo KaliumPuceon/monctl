@@ -1,1 +1,4 @@
-__pycache__/*
+monctl/__pycache__/*
+dist/*
+usr/*
+PKGBUILD

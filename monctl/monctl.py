@@ -1,7 +1,7 @@
-import sys
-from g27q import G27Q
-from ui_monctl import Ui_Form
-from PySide6 import QtCore, QtWidgets, QtGui
+from qtpy import QtCore, QtWidgets, QtGui
+
+from .g27q import G27Q
+from .ui_monctl import Ui_Form
 
 class MyWindow(QtWidgets.QWidget, Ui_Form):
     def __init__(self):
@@ -44,12 +44,3 @@ class MyWindow(QtWidgets.QWidget, Ui_Form):
     
     def set_blueLight(self,value):
         self.set_monitorProperty("BlueLight", value)
-
-
-if __name__ == "__main__":
-    app = QtWidgets.QApplication([])
-
-    widget = MyWindow()
-    widget.show()
-
-    sys.exit(app.exec())
