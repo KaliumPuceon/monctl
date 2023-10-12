@@ -1,23 +1,18 @@
 import sys
 
-if __name__ == "__main__":
-    try:
-        if sys.argv[1] == 'gui':
-            from qtpy import QtWidgets
-            from .monctl import MyWindow
+def monctl():
+        from qtpy import QtWidgets
+        from .monctl import MyWindow
 
-            app = QtWidgets.QApplication([])
+        app = QtWidgets.QApplication([])
 
-            widget = MyWindow()
-            widget.show()
+        widget = MyWindow()
+        widget.show()
 
-            sys.exit(app.exec_())
-        else:
-            from .moncli import Moncli
-            moncli = Moncli()
-            moncli.app(sys.argv[2:])
+        sys.exit(app.exec_())
+def moncli():
+        from .moncli import Moncli
+        moncli = Moncli()
+        moncli.app(sys.argv)
 
-    except IndexError:
-        print("Provide an argument (cli/gui)")
 
-        

@@ -21,3 +21,7 @@ dependencies = [
 [project.urls]
 "Source code" = "https://github.com/Gothem/monctl"
 "Bug Tracker" = "https://github.com/Gothem/monctl/issues"
+
+[project.scripts]
+monctl = "monctl.__main__:monctl"
+moncli = "monctl.__main__:moncli"

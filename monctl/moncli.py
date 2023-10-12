@@ -48,7 +48,7 @@ class Moncli():
         parser.add_argument('-w','--bluelight', type=int, help="display warmth [1-10]")
         parser.add_argument('-r', '--relative', action="store_true", help="change value(s) relatively instead of absolutely")
         parser.add_argument('-p', '--print', action="store_true", help="print current values")
-        args = parser.parse_args(argv)
+        args = parser.parse_args()
 
         brightness = 0
         contrast = 0
