@@ -47,6 +47,10 @@ Distribution still being worked out
 
 ```
 git clone 'https://github.com/KaliumPuceon/monctl'
+cd monctl
+# Install udev rules so users can control the monitor without sudo
+sudo install -Dm 644 resources/99-gigabyte-monitor.rules /usr/lib/udev/rules.d
+cd monctl
 pip install monctl
 ```
 
