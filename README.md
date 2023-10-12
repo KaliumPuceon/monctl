@@ -45,5 +45,10 @@ if you want to try scripting with this
 ### pip
 Distribution still being worked out
 
-### Arch
-PKGBUILD has not yet been updated fully, check in soon.
+```
+git clone 'https://github.com/KaliumPuceon/monctl'
+pip install monctl
+```
+
+
+
